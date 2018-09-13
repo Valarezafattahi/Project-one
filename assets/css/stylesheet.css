@@ -1,0 +1,387 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 150px;
+    background: rgb(23, 177, 129);
+    text-transform: uppercase;
+}
+header > h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    color: rgb(255, 255, 255);
+    line-height: 150px;
+    font-size: 72px;
+    letter-spacing: 10px;
+    /* font-weight: 700; */
+}
+#nav_container {
+    height: 60px;
+    background: rgb(19, 145, 106);
+    border-bottom: 10px solid rgb(23, 177, 129); 
+    font-family: Calibri, candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+nav {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+nav > a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: bold;
+}
+.banner:focus {
+    text-decoration:none;
+}
+.banner:hover {
+   color: #74ffba;
+   text-decoration: none;
+}
+.banner:active{
+    color: lightskyblue;
+    text-decoration: none;
+}
+.banner:visited {
+    color: black;
+    text-decoration: none;
+}
+.headingFont{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 500;  
+
+}
+
+/*CSS SPECIFIC TO LANDING PAGE*/
+#quote {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 45px;
+    line-height: 60px;
+    text-align-last: right;
+}
+#landPage {
+    background: rgb(240, 240, 240);
+    background: url("../Images/picture.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;   
+    -o-background-size: cover;     
+    background-size: cover; 
+    box-sizing: border-box;    
+}
+#quote_container{
+    border-top: 10px solid rgb(19, 145, 106);
+    width: 100%;
+    margin-bottom: -100px;
+}
+#quote{
+    margin-top: 20px;
+}
+#search_container {
+    margin-top: 10%;
+    background: rgb(19, 145, 106);
+    background: rgba(23, 177, 129, 0.9);
+    padding: 35px;
+    border-radius: 3px;
+}
+    #searchTitle {
+        margin-top: 25px;
+        padding: 0;
+        text-align: center;
+        font-family: Calibri, candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        font-weight: 600;
+        color: black;
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+    #buttonSubmit {
+        margin-top: 15px;
+        margin-left:30px;
+        background: rgb(19, 145, 106);
+        border:rgba(23, 177, 129);
+        font-family: 'Permanent Marker', cursive;
+        letter-spacing: 3px;
+        font-size: 30px;
+        width:125px;
+    }
+
+
+
+
+
+
+
+/* CSS SPECIFIC TO INFORMATION PAGE */
+#country_info_container {
+    text-align: center;
+    background: rgb(19, 145, 106);
+    background: rgba(23, 177, 129, 0.9);
+    padding: 35px;
+    border-radius: 3px;
+}
+#destination_name {
+    text-align: center;
+    margin: 30px;
+    background: rgb(19, 145, 106);
+    background: rgba(23, 177, 129, 0.9);
+    padding: 35px;
+    border-radius: 3px;
+}
+.flag {
+    max-width: 80%;
+}
+#city_snapshot {
+    text-align: center;
+    background: rgb(19, 145, 106);
+    background: rgba(23, 177, 129, 0.9);
+    padding: 35px;
+    border-radius: 3px;
+}
+.carousel {
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel_image {
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 400px;
+    overflow: hidden;
+}
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+} */
+#country_headlines_container {
+    text-align: center;
+    background: rgb(19, 145, 106);
+    background: rgba(23, 177, 129, 0.9);
+    padding: 35px;
+    border-radius: 3px;
+    margin-top:30px;
+}
+#map_container {
+    text-align: center;
+    background: rgb(19, 145, 106);
+    background: rgba(23, 177, 129, 0.9);
+    padding: 35px;
+    border-radius: 3px;
+    margin-top:30px;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+#poi_selections {
+    background: rgb(19, 145, 106);
+    background: rgba(23, 177, 129, 0.9);
+    padding: 35px;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+#reset_queries {
+    margin-top: 30px;
+}
+
+.story_title {
+    font-weight: bold;
+}
+.story_description {
+    margin-top:2px;
+    color: gray;
+    font-size: small;
+    background: rgb(19, 145, 106);
+    padding: 25px;
+    border-radius: 3px;
+}
+#map {
+    height: 800px;
+    width: 100%;
+    overflow: visible;
+    margin-bottom: 30px;
+    background: rgb(19, 145, 106);
+    background: rgba(23, 177, 129, 0.9);
+    padding: 35px;
+    border-radius: 3px;
+}
+.story_title > a, a:hover, a:active, a:visited, a:focus {
+        text-decoration:none;
+} 
+.story_title > a, a:hover {
+       color: #74ffba;
+}
+.story_title > a, a:active {
+    color: lightskyblue;
+}
+.story_title > a, a:visited {
+    color: black;
+}
+.story_container{
+    margin-top:30px;
+}
+.story_description > p {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 15px;
+}
+
+
+
+@media screen and (max-width: 400px) {
+    header {
+        height: 150px;
+        background: rgb(23, 177, 129);
+        text-transform: uppercase;
+    }
+    header > h1 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-family: Calibri, candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        color: rgb(255, 255, 255);
+        line-height: 150px;
+        font-size: 72px;
+        letter-spacing: 10px;
+        font-weight: 700;
+    }
+    #nav_container {
+        height: 60px;
+        background: rgb(19, 145, 106);
+        border-bottom: 10px solid rgb(23, 177, 129); 
+        font-family: Calibri, candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        width:100%;
+    }
+    nav {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+    }
+    nav > a {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CSS SPECIFIC TO BOOKING PAGE */
+#bookingTable th{
+    background:  rgb(23, 177, 129);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(19, 145, 106);
+    border-bottom-width: 8px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 3px;
+    margin-right:40px;
+}
+
+#tableInfo {
+    height: 950px;
+    overflow: auto;
+}
+/*makes the add to itinerary table cell change from cursor hover*/
+#itin:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color: rgb(23, 177, 129);
+  }
+#itin{
+    font-weight: bold;
+}
+#formStyle {
+        background: rgb(19, 145, 106);
+        background: rgba(23, 177, 129, 0.9);
+        padding: 35px;
+        border-radius: 3px;
+        margin-left:45px;
+        height:620px;
+}
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+#flight {
+    position: absolute;
+    top:105%;
+    width: 400px;
+    height:300px;
+}
+
+#flight{
+    position: absolute;
+    top:105%;
+    height:300px;
+    left:30px;
+    width:150%;
+}
+
+
+
+
+
+
+
+
+/* itinerary */
+
+
+#itin-cont {
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    background: rgb(19, 145, 106);
+    background: rgba(23, 177, 129, 0.9);
+    padding: 35px;
+    border-radius: 3px;
+}
+
+#post-button {
+    margin-right: 50px;
+}
+
+#clear-button {
+    margin-top: 50px;
+}

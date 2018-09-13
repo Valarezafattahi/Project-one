@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/stylesheet.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+</head>
+<body>
+    <header><h1>WANDERLUST</h1></header>
+    <div id="nav_container">
+        <nav>
+            <a class="banner" href="index.html">SEARCH</a>
+            <a class="banner" href="booking.html">BOOKING</a>
+            <a class="banner" href="information.html">INFORMATION</a>
+            <a class="banner" href="itinerary.html">ITINERARY</a>
+        </nav>
+    </div>
+    <main>
+        <div class="col-12">
+            <h1 id="destination_name"></h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <form id="formStyle" class="col-3">
+                        <div class="form-group">
+                            <label for="Destination">Destination</label>
+                            <input type="text" class="form-control" id="inputDestination" aria-describedby="nameHelp" placeholder="Destination" value="Toronto">
+                        </div>
+                        <div class="form-group">
+                            <label for="startDate">Start Date</label>
+                            <input type="date" class="form-control" id="inputStartDate" aria-describedby="roleHelp" placeholder="MM/DD/YYYY">
+                        </div>
+                        <div class="form-group">
+                            <label for="role">End Date</label>
+                            <input type="date" class="form-control" id="inputEndDate" aria-describedby="dateHelp" placeholder="MM/DD/YYYY">
+                        </div>     
+                        <div class="form-group">
+                            <label for="rooms">Rooms</label>
+                            <input type="number" class="form-control" id="inputRooms" aria-describedby="monthlyRateHelp" placeholder="Number of Rooms" value="1">
+                        </div>
+                        <div class="form-group">
+                                <label for="adults"># of Adults</label>
+                                <input type="number" class="form-control" id="inputAdults" aria-describedby="monthlyRateHelp" placeholder="Number of Adults" value="1">
+                        </div>
+                        <div class="form-group">
+                                <label for="children"># of Children</label>
+                                <input type="number" class="form-control" id="inputChildren" aria-describedby="monthlyRateHelp" placeholder="Number of Children" value="0">
+                        </div>
+                        <button type="button" class="btn btn-primary" style="float:right;" id="submit-button">Submit</button>  
+                        <div class=col-10 id="flight">
+                                <div id="kayakSearchWidgetContainer" style="width: 500px; height: 500px;"></div>
+                        </div>       
+                </form>
+                <div class="col-8 mx-auto box" id="tableInfo">
+                    <table class="table" id="bookingTable">
+                    <thead>
+                        <tr>
+                        <th scope="col" class="hotelTable">Star Rating</th>
+                        <th scope="col" class="hotelTable">Avg Price / Night</th>
+                        <th scope="col" class="hotelTable">Total Price</th>
+                        <th scope="col" class="hotelTable">Check in</th>
+                        <th scope="col" class="hotelTable">Check Out</th>
+                        <th scope="col" class="hotelTable">Link</th>                                                
+                        <th scope="col" class="hotelTable">Add to Itinerary</th>
+                        </tr>
+                    </thead>              
+                </div>
+            </div>
+             
+        </div>
+    </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./assets/javascript/booking.js"></script>
+<script type="text/JavaScript" src="https://www.kayak.com/affiliate/widget-v2.js"></script>
+</body>
+
+
+
+<!-- <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script> -->
+</html>

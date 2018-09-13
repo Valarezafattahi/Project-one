@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Information</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9" crossorigin="anonymous"></script>
+    <!-- <script src="https://apis.google.com/js/api.js" type="text/javascript"></script> -->
+
+    <!-- <script src="./assets/javascript/countries.js"></script> -->
+    <script src="./assets/javascript/info.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN3EyjOpztvL3D3bhE9zYi7KoSpczjM1s&libraries=places"></script>
+<!--     <script type="text/javascript">
+        gapi.load('auth2', function() {
+        // Library loaded.
+    });
+    </script> -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Wanderlust Information Page">
+    <meta name="keywords" content="Wanderlust,Information">
+    <meta name="author" content="Group Awesome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <header><h1>WANDERLUST</h1></header>
+    <div id="nav_container">
+        <nav>
+            <a class="banner" href="index.html">SEARCH</a>
+            <a class="banner" href="booking.html">BOOKING</a>
+            <a class="banner" href="information.html">INFORMATION</a>
+            <a class="banner" href="itinerary.html">ITINERARY</a>
+        </nav>
+    </div>
+    <main>
+        <div class="col-12">
+            <h1 id="destination_name"></h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <div id="country_info_container">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div id="city_snapshot">
+                        <div id="city_photo_carousel">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="city_description">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div id="map_container">
+                        <h2 class="headingFont">Points of Interest</h2>
+                        <div id="map"></div>
+
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div id="poi_selections">
+                        <h3>Populate:</h3>
+                        <ul id="filters"></ul>
+                        <h3>Search:</h3>
+                        <form id="selection_form">
+                            <input type="text" id="selection_input" placeholder="e.g. 'Aquariums'">
+                            <input type="submit" id="add_selection" value="Add a Query">
+                        </form>
+                        <button id="reset_queries">Reset All Queries</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="country_headlines_container">
+                    <h2 class="headingFont">Recent Headlines</h2>
+                    <div id="stories_list"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="service_helper"></div>
+    <div id="service_helper2"></div>
+    <div id="tester"></div>
+</body>
+</html>
